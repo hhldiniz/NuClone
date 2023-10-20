@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:nu_clone/view/main/sections/account.dart';
 import 'package:nu_clone/view/main/sections/credit_card.dart';
-import 'package:nu_clone/view/main/sections/shortcuts.dart' as shortcuts;
+import 'package:nu_clone/view/main/sections/credit_card_expenses.dart';
+import 'package:nu_clone/view/main/sections/loan.dart';
+import 'package:nu_clone/view/main/sections/shotcuts/shortcuts.dart' as shortcuts;
 
 class Main extends StatelessWidget {
   const Main({super.key});
@@ -18,8 +20,13 @@ class Main extends StatelessWidget {
           Account(),
           shortcuts.Shortcuts(),
           CreditCard(),
-          Text("Empréstimos"),
+          Divider(),
+          CreditCardExpenses(),
+          Divider(),
+          Loan(),
+          Divider(),
           Text("Investimentos"),
+          Text("Seguro de vida"),
         ],
       )),
     );
